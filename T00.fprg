@@ -4,9 +4,9 @@
         <attribute name="name" value="T00"/>
         <attribute name="authors" value="Airin Tania"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-03 04:22:10 PM"/>
+        <attribute name="saved" value="2025-10-03 04:30:10 PM"/>
         <attribute name="created" value="QWlyaW4gVGFuaWE7TEFQVE9QLTQyVkJSM0hWOzIwMjUtMTAtMDE7MDg6MDI6NDAgUE07MzM0Nw=="/>
-        <attribute name="edited" value="QWlyaW4gVGFuaWE7TEFQVE9QLTQyVkJSM0hWOzIwMjUtMTAtMDM7MDQ6MjI6MTAgUE07NzszNDU4"/>
+        <attribute name="edited" value="QWlyaW4gVGFuaWE7TEFQVE9QLTQyVkJSM0hWOzIwMjUtMTAtMDM7MDQ6MzA6MTAgUE07ODszNDU4"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -16,18 +16,18 @@
             <input variable="b"/>
             <if expression="a MOD 2 == 0">
                 <then>
-                    <output expression="&quot;Bilangan pertama: Genap&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama:Genap&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;Bilangan pertama: Ganjil&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama:Ganjil&quot;" newline="True"/>
                 </else>
             </if>
             <if expression="b MOD 2 == 0">
                 <then>
-                    <output expression="&quot;Bilangan kedua: Genap&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan kedua:Genap&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;Bilangan kedua: Ganjil&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan kedua:Ganjil&quot;" newline="True"/>
                 </else>
             </if>
             <if expression="a&gt;b">
@@ -45,13 +45,20 @@
                     </if>
                 </else>
             </if>
-            <if expression="(a MOD 2 == 0)&amp;&amp;(b mod 2 == 0)">
+            <if expression="a MOD 2 == 0">
                 <then>
-                    <assign variable="tambah" expression="a+b"/>
-                    <output expression="&quot;Hasil penjumlahan:&quot;&amp;tambah" newline="True"/>
+                    <if expression="b MOD 2 == 0">
+                        <then>
+                            <assign variable="tambah" expression="a+b"/>
+                            <output expression="&quot;Hasil penjumlahan:&quot;&amp;tambah" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
+                        </else>
+                    </if>
                 </then>
                 <else>
-                    <if expression="(a MOD 2 == 1)&amp;&amp;(b mod 2 == 1)">
+                    <if expression="b MOD 2 != 0">
                         <then>
                             <assign variable="kali" expression="a*b"/>
                             <output expression="&quot;Hasil perkalian:&quot;&amp;kali" newline="True"/>

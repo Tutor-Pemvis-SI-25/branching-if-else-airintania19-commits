@@ -10,14 +10,14 @@ public class JavaApplication {
         a = Integer.parseInt(input.nextLine());
         b = Integer.parseInt(input.nextLine());
         if (a % 2 == 0) {
-            System.out.println("Bilangan pertama: Genap");
+            System.out.println("Bilangan pertama:Genap");
         } else {
-            System.out.println("Bilangan pertama: Ganjil");
+            System.out.println("Bilangan pertama:Ganjil");
         }
         if (b % 2 == 0) {
-            System.out.println("Bilangan kedua: Genap");
+            System.out.println("Bilangan kedua:Genap");
         } else {
-            System.out.println("Bilangan kedua: Ganjil");
+            System.out.println("Bilangan kedua:Ganjil");
         }
         if (a > b) {
             System.out.println("Bilangan pertama lebih besar");
@@ -28,11 +28,15 @@ public class JavaApplication {
                 System.out.println("Kedua bilangan sama besar");
             }
         }
-        if (a % 2 == 0 && b % 2 == 0) {
-            tambah = a + b;
-            System.out.println("Hasil penjumlahan:" + tambah);
+        if (a % 2 == 0) {
+            if (b % 2 == 0) {
+                tambah = a + b;
+                System.out.println("Hasil penjumlahan:" + tambah);
+            } else {
+                System.out.println("Berbeda jenis");
+            }
         } else {
-            if (a % 2 == 1 && b % 2 == 1) {
+            if (b % 2 != 0) {
                 kali = a * b;
                 System.out.println("Hasil perkalian:" + kali);
             } else {
