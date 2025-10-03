@@ -1,3 +1,5 @@
+//12S25046-Airin Tania Purba
+
 import java.util.*;
 import java.lang.Math;
 
@@ -31,18 +33,17 @@ public class T00 {
         if (a % 2 == 0) {
             if (b % 2 == 0) {
                 tambah = a + b;
-                System.out.println("Hasil penjumlahan:" + tambah);
+                System.out.println("Hasil penjumlahan: " + tambah);
             } else {
                 System.out.println("Berbeda jenis");
             }
         } else {
             if (b % 2 != 0) {
                 kali = a * b;
-                System.out.println("Hasil perkalian:" + kali);
+                System.out.println("Hasil perkalian: " + kali);
             } else {
                 System.out.println("Berbeda jenis");
             }
         }
     }
 }
-

@@ -1,12 +1,13 @@
 <?xml version="1.0"?>
 <flowgorithm fileversion="4.2">
     <attributes>
-        <attribute name="name" value="T00"/>
-        <attribute name="authors" value="Airin Tania"/>
+        <attribute name="name" value="latihan tutor"/>
+        <attribute name="authors" value="WINDOWS 11"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-03 04:34:27 PM"/>
-        <attribute name="created" value="QWlyaW4gVGFuaWE7TEFQVE9QLTQyVkJSM0hWOzIwMjUtMTAtMDE7MDg6MDI6NDAgUE07MzM0Nw=="/>
-        <attribute name="edited" value="QWlyaW4gVGFuaWE7TEFQVE9QLTQyVkJSM0hWOzIwMjUtMTAtMDM7MDQ6MzQ6MjcgUE07OTszNDcx"/>
+        <attribute name="saved" value="2025-10-03 02:09:19 PM"/>
+        <attribute name="created" value="V0lORE9XUyAxMTtSQUZBRUxTSVNFTU9TOzIwMjUtMTAtMDE7MDg6MjA6NDIgUE07MjkzMA=="/>
+        <attribute name="edited" value="V0lORE9XUyAxMTtSQUZBRUxTSVNFTU9TOzIwMjUtMTAtMDM7MDI6MDM6NTEgUE07MztBU1VTO0xBUFRPUC1GTDM1RU5FTzsyMDI1LTEwLTAxOzA4OjIxOjQ5IFBNO1QwMFsyXS5mcHJnOzY2OTU="/>
+        <attribute name="edited" value="V0lORE9XUyAxMTtSQUZBRUxTSVNFTU9TOzIwMjUtMTAtMDM7MDI6MDk6MTkgUE07MTE7MzA5NA=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -49,8 +50,8 @@
                 <then>
                     <if expression="b MOD 2 == 0">
                         <then>
-                            <assign variable="tambah" expression="a+b"/>
-                            <output expression="&quot;Hasil penjumlahan:&quot;&amp;tambah" newline="True"/>
+                            <assign variable="tambah" expression="a + b"/>
+                            <output expression="&quot;Hasil penjumlahan: &quot; &amp; tambah" newline="True"/>
                         </then>
                         <else>
                             <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
@@ -60,8 +61,8 @@
                 <else>
                     <if expression="b MOD 2 != 0">
                         <then>
-                            <assign variable="kali" expression="a*b"/>
-                            <output expression="&quot;Hasil perkalian:&quot;&amp;kali" newline="True"/>
+                            <assign variable="kali" expression="a * b"/>
+                            <output expression="&quot;Hasil perkalian: &quot; &amp; kali" newline="True"/>
                         </then>
                         <else>
                             <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
