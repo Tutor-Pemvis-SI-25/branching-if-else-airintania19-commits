@@ -1,11 +1,11 @@
 import java.util.*;
 import java.lang.Math;
 
-public class T00 {
+public class JavaApplication {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int a, b;
+        int a, b, tambah, kali;
 
         a = Integer.parseInt(input.nextLine());
         b = Integer.parseInt(input.nextLine());
@@ -29,10 +29,12 @@ public class T00 {
             }
         }
         if (a % 2 == 0 && b % 2 == 0) {
-            System.out.println("Hasil penjumlahan=" + a + b);
+            tambah = a + b;
+            System.out.println("Hasil penjumlahan=" + tambah);
         } else {
             if (a % 2 == 1 && b % 2 == 1) {
-                System.out.println("Hasil perkalian=" + a * b);
+                kali = a * b;
+                System.out.println("Hasil perkalian=" + kali);
             } else {
                 System.out.println("Berbeda jenis");
             }
