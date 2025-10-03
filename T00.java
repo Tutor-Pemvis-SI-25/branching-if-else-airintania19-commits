@@ -1,0 +1,41 @@
+import java.util.*;
+import java.lang.Math;
+
+public class JavaApplication {
+    private static Scanner input = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int a, b;
+
+        a = Integer.parseInt(input.nextLine());
+        b = Integer.parseInt(input.nextLine());
+        if (a % 2 == 0) {
+            System.out.println("Bilangan pertama:genap");
+        } else {
+            System.out.println("Bilangan pertama:ganjil");
+        }
+        if (b % 2 == 0) {
+            System.out.println("Bilangan kedua:genap");
+        } else {
+            System.out.println("Bilangan kedua:ganjil");
+        }
+        if (a > b) {
+            System.out.println("Bilangan pertama lebih besar");
+        } else {
+            if (b > a) {
+                System.out.println("Bilangan kedua lebih besar");
+            } else {
+                System.out.println("keduanya bilangan sama besar");
+            }
+        }
+        if (a % 2 == 0 && b % 2 == 0) {
+            System.out.println("Hasil penjumlahan=" + a + b);
+        } else {
+            if (a % 2 != 0 && b % 2 != 0) {
+                System.out.println("Hasil perkalian=" + a * b);
+            } else {
+                System.out.println("Berbeda jenis");
+            }
+        }
+    }
+}
