@@ -1,7 +1,7 @@
 import java.util.*;
 import java.lang.Math;
 
-public class T00 {
+public class JavaApplication {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -10,14 +10,14 @@ public class T00 {
         a = Integer.parseInt(input.nextLine());
         b = Integer.parseInt(input.nextLine());
         if (a % 2 == 0) {
-            System.out.println("Bilangan pertama:Genap");
+            System.out.println("Bilangan pertama: Genap");
         } else {
-            System.out.println("Bilangan pertama:Ganjil");
+            System.out.println("Bilangan pertama: Ganjil");
         }
         if (b % 2 == 0) {
-            System.out.println("Bilangan kedua:Genap");
+            System.out.println("Bilangan kedua: Genap");
         } else {
-            System.out.println("Bilangan kedua:Ganjil");
+            System.out.println("Bilangan kedua: Ganjil");
         }
         if (a > b) {
             System.out.println("Bilangan pertama lebih besar");
@@ -28,15 +28,13 @@ public class T00 {
                 System.out.println("Kedua bilangan sama besar");
             }
         }
-        if (a % 2 == 0) {
-            if (b % 2 == 0) {
-                tambah = a + b;
-                System.out.println("Hasil penjumlahan=" + tambah);
-            }
+        if (a % 2 == 0 && b % 2 == 0) {
+            tambah = a + b;
+            System.out.println("Hasil penjumlahan:" + tambah);
         } else {
-            if (b % 2 != 0) {
+            if (a % 2 == 1 && b % 2 == 1) {
                 kali = a * b;
-                System.out.println("Hasil perkalian=" + kali);
+                System.out.println("Hasil perkalian:" + kali);
             } else {
                 System.out.println("Berbeda jenis");
             }
