@@ -25,14 +25,16 @@ public class JavaApplication {
             if (b > a) {
                 System.out.println("Bilangan kedua lebih besar");
             } else {
-                System.out.println("keduanya bilangan sama besar");
+                System.out.println("Kedua bilangan sama besar");
             }
         }
-        if (a % 2 == 0 && b % 2 == 0) {
-            tambah = a + b;
-            System.out.println("Hasil penjumlahan=" + tambah);
+        if (a % 2 == 0) {
+            if (b % 2 == 0) {
+                tambah = a + b;
+                System.out.println("Hasil penjumlahan=" + tambah);
+            }
         } else {
-            if (a % 2 == 1 && b % 2 == 1) {
+            if (b % 2 != 0) {
                 kali = a * b;
                 System.out.println("Hasil perkalian=" + kali);
             } else {
